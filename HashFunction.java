@@ -6,14 +6,21 @@ public class HashFunction {
 
         Scanner sc = new Scanner(System.in);
 
+        int tableSize, key, hashIndex;
+
+        System.out.println(" Hash Function ");
+
         System.out.print("Enter Table Size: ");
-        int tableSize = sc.nextInt();
+        tableSize = sc.nextInt();
 
         System.out.print("Enter Key: ");
-        int key = sc.nextInt();
+        key = sc.nextInt();
 
-        int hashIndex = key % tableSize;
+        hashIndex = key % tableSize;
 
+        System.out.println("\nResult");
+        System.out.println("Key = " + key);
+        System.out.println("Table Size = " + tableSize);
         System.out.println("Hash Index = " + hashIndex);
 
         sc.close();

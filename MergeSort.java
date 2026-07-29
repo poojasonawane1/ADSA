@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class MergeSort {
-    // O(nlogn)
+    
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int arr[];
@@ -29,7 +29,7 @@ public class MergeSort {
         if( si >= ei) {
             return;
         }
-        // O(logn)
+        
         if(si < ei) {
             int mid = si + (ei - si) / 2 ;
             divide(arr, si, mid);
@@ -44,7 +44,7 @@ public class MergeSort {
         int indx1 = si;
         int indx2 = mid + 1;
         int x = 0;
-        // O(n)
+        
         while(indx1 <= mid && indx2 <= ei) {
             if(arr[indx1] <= arr[indx2]) {
                 merged[x++] = arr[indx1++];

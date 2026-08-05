@@ -11,7 +11,7 @@ class Node {
 public class BST {
     Node root;
 
-    // Insert a node
+    
     public Node insert(Node root, int data) {
         if (root == null) {
             return new Node(data);
@@ -26,7 +26,7 @@ public class BST {
         return root;
     }
 
-    // Inorder Traversal (Left -> Root -> Right)
+
     public void inorder(Node root) {
         if (root == null)
             return;
@@ -36,7 +36,7 @@ public class BST {
         inorder(root.right);
     }
 
-    // Preorder Traversal (Root -> Left -> Right)
+    
     public void preorder(Node root) {
         if (root == null)
             return;
@@ -46,7 +46,7 @@ public class BST {
         preorder(root.right);
     }
 
-    // Postorder Traversal (Left -> Right -> Root)
+    
     public void postorder(Node root) {
         if (root == null)
             return;
